@@ -1,0 +1,12 @@
+# Local environment, rebuilt by `uv sync`
+.venv/
+
+# Python and pytest caches, rebuilt on every run
+__pycache__/
+.pytest_cache/
+
+# Build output, if the package is ever built
+dist/
+
+# Personal scratch notebooks; the scripts are the source of truth
+scratch/

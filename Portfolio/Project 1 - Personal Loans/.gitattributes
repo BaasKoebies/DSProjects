@@ -1,0 +1,2 @@
+# Keep the data file byte-identical on every OS so its SHA-256 checksum holds.
+*.csv text eol=lf

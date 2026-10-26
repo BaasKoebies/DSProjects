@@ -1,0 +1,26 @@
+[project]
+name = "loan-targeting"
+version = "0.1.0"
+description = "Which customers should a bank call about a personal loan, and what is that worth?"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "lightgbm>=4.5",
+    "matplotlib>=3.9",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scikit-learn>=1.5",
+    "scipy>=1.13",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29",
+    "pytest>=8",
+]
+
+[build-system]
+requires = ["uv_build>=0.10.2,<0.11"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
