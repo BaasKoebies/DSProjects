@@ -70,6 +70,22 @@ def validate(df: pd.DataFrame) -> None:
         raise DataCheckError(f"Expected {EXPECTED_POSITIVES} accepted offers, got {positives}.")
 
 
+# Columns removed before modelling, with the label-free reason for each (see eda.py).
+# Dropping learns nothing from the data, so it is safe outside the CV folds.
+DROPPED = {
+    "ID": "row identifier, carries no information about the customer",
+    "ZIP Code": "a code, not a quantity: 467 values and one broken 4-digit entry",
+    "Experience": "Age restated (r = 0.994, Age minus 24 to 30) with 52 impossible negative values",
+}
+
+# Model inputs by how they are preprocessed. Scaling and one-hot encoding learn
+# from the data, so they happen inside each training fold, not here.
+CONTINUOUS_INPUTS = ["Age", "Income", "CCAvg", "Mortgage"]
+CATEGORICAL_INPUTS = ["Family", "Education"]
+BINARY_INPUTS = ["Securities Account", "CD Account", "Online", "CreditCard"]
+MODEL_INPUTS = CONTINUOUS_INPUTS + CATEGORICAL_INPUTS + BINARY_INPUTS
+
+
 def load_raw(path: Path = DATA_PATH) -> pd.DataFrame:
     """Load the CSV after checking its fingerprint, then validate its contents."""
     actual = sha256_of(path)
@@ -81,3 +97,11 @@ def load_raw(path: Path = DATA_PATH) -> pd.DataFrame:
     df = pd.read_csv(path)
     validate(df)
     return df
+
+
+def model_inputs(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series]:
+    """Split validated data into model inputs X and the outcome y, without the dropped columns."""
+    covered = set(MODEL_INPUTS) | set(DROPPED) | {TARGET}
+    if covered != set(df.columns):
+        raise DataCheckError(f"Columns not assigned to inputs, drops or target: {sorted(set(df.columns) ^ covered)}")
+    return df[MODEL_INPUTS].copy(), df[TARGET].copy()

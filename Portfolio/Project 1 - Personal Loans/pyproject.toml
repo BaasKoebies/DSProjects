@@ -2,6 +2,7 @@
 name = "loan-targeting"
 version = "0.1.0"
 description = "Which customers should a bank call about a personal loan, and what is that worth?"
+readme = "README.md"
 requires-python = ">=3.11,<3.12"
 dependencies = [
     "lightgbm>=4.5",
