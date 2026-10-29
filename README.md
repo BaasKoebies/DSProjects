@@ -2,9 +2,9 @@ Data Science Exploration Projects Repository
 
 Welcome to my GitHub repository dedicated to exploring the principles of Data Science through various projects. This repository contains a collection of projects that I have worked on to develop and showcase my skills in the field of Data Science. Below, you'll find a brief overview of each project:
 
-1. Personal Loans Analysis
+1. Personal Loan Offer Targeting
 
-Project Description: In this project, I analyze a dataset related to personal loans. I explore the data to gain insights into factors affecting loan approvals and customer demographics. The goal is to build predictive models to assess credit risk and make data-driven recommendations.
+Project Description: Which customers should a bank call about a personal loan offer, and what is that worth? This project is a decision memo that prices each call against the margin it is expected to earn. In repeated cross-validation, a calibrated LightGBM model earns R411,000 per 1,000 customers, 95% of what perfect foresight would earn, against R315,000 for a simple income cutoff. The project README holds the full memo and the steps to reproduce it.
 
 Folder Name: Project 1 - Personal Loans
 
@@ -45,6 +45,6 @@ Contributions
 I welcome contributions and suggestions from the community. If you have any ideas for improving existing projects or would like to collaborate on new data science projects, please feel free to open an issue or create a pull request.
 Contact Information
 
-If you have any questions or would like to get in touch with me regarding these projects, you can reach out to me via email at quanellb@gmail.com.
+To get in touch about these projects, see my [portfolio site](https://baaskoebies.github.io/) or my [GitHub profile](https://github.com/BaasKoebies).
 
 Happy coding and exploring the world of Data Science! ??
