@@ -1,0 +1,5 @@
+contact_cost,threshold,model,precision,recall,share_called
+500.0,0.1,lightgbm,0.8316,0.9733,0.1124
+500.0,0.1,logistic,0.4839,0.9006,0.1787
+1000.0,0.2,lightgbm,0.9055,0.9573,0.1015
+1000.0,0.2,logistic,0.6583,0.8254,0.1204

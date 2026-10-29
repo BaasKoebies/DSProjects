@@ -1,0 +1,256 @@
+{
+  "tuning_seed": 20261019,
+  "objective": "mean 5-fold log loss of the Platt-calibrated model",
+  "logistic": {
+    "params": {
+      "C": 10.0
+    },
+    "log_loss": 0.11722
+  },
+  "lightgbm": {
+    "params": {
+      "num_leaves": 30,
+      "min_child_samples": 47,
+      "learning_rate": 0.08498167088115272,
+      "n_estimators": 498,
+      "reg_lambda": 0.0034145244015839444
+    },
+    "log_loss": 0.03134
+  },
+  "all_trials": {
+    "logistic": [
+      {
+        "params": {
+          "C": 0.01
+        },
+        "log_loss": 0.16941
+      },
+      {
+        "params": {
+          "C": 0.1
+        },
+        "log_loss": 0.12703
+      },
+      {
+        "params": {
+          "C": 1.0
+        },
+        "log_loss": 0.11755
+      },
+      {
+        "params": {
+          "C": 10.0
+        },
+        "log_loss": 0.11722
+      },
+      {
+        "params": {
+          "C": 100.0
+        },
+        "log_loss": 0.11722
+      }
+    ],
+    "lightgbm": [
+      {
+        "params": {
+          "num_leaves": 23,
+          "min_child_samples": 89,
+          "learning_rate": 0.03179305946293827,
+          "n_estimators": 508,
+          "reg_lambda": 0.8636766232437553
+        },
+        "log_loss": 0.03281
+      },
+      {
+        "params": {
+          "num_leaves": 4,
+          "min_child_samples": 12,
+          "learning_rate": 0.10039984690513291,
+          "n_estimators": 702,
+          "reg_lambda": 0.46265648511455876
+        },
+        "log_loss": 0.03362
+      },
+      {
+        "params": {
+          "num_leaves": 28,
+          "min_child_samples": 11,
+          "learning_rate": 0.01006991007317674,
+          "n_estimators": 748,
+          "reg_lambda": 2.978349732834726
+        },
+        "log_loss": 0.03379
+      },
+      {
+        "params": {
+          "num_leaves": 31,
+          "min_child_samples": 23,
+          "learning_rate": 0.01594432614981363,
+          "n_estimators": 608,
+          "reg_lambda": 0.009643914960186501
+        },
+        "log_loss": 0.03234
+      },
+      {
+        "params": {
+          "num_leaves": 13,
+          "min_child_samples": 20,
+          "learning_rate": 0.10356734237981768,
+          "n_estimators": 587,
+          "reg_lambda": 0.004970437693977274
+        },
+        "log_loss": 0.03191
+      },
+      {
+        "params": {
+          "num_leaves": 25,
+          "min_child_samples": 26,
+          "learning_rate": 0.11601815328320263,
+          "n_estimators": 119,
+          "reg_lambda": 0.003488808508973311
+        },
+        "log_loss": 0.03168
+      },
+      {
+        "params": {
+          "num_leaves": 31,
+          "min_child_samples": 16,
+          "learning_rate": 0.014285969820747936,
+          "n_estimators": 502,
+          "reg_lambda": 0.04364859095929367
+        },
+        "log_loss": 0.03336
+      },
+      {
+        "params": {
+          "num_leaves": 8,
+          "min_child_samples": 26,
+          "learning_rate": 0.04300325010211742,
+          "n_estimators": 695,
+          "reg_lambda": 2.307642962781444
+        },
+        "log_loss": 0.03327
+      },
+      {
+        "params": {
+          "num_leaves": 14,
+          "min_child_samples": 32,
+          "learning_rate": 0.010686892382942872,
+          "n_estimators": 505,
+          "reg_lambda": 0.001630323311867494
+        },
+        "log_loss": 0.03502
+      },
+      {
+        "params": {
+          "num_leaves": 23,
+          "min_child_samples": 73,
+          "learning_rate": 0.05206507595608238,
+          "n_estimators": 443,
+          "reg_lambda": 0.28597473519819155
+        },
+        "log_loss": 0.03174
+      },
+      {
+        "params": {
+          "num_leaves": 25,
+          "min_child_samples": 69,
+          "learning_rate": 0.06115709208241575,
+          "n_estimators": 588,
+          "reg_lambda": 0.11008108736609051
+        },
+        "log_loss": 0.03179
+      },
+      {
+        "params": {
+          "num_leaves": 28,
+          "min_child_samples": 13,
+          "learning_rate": 0.013862638801667368,
+          "n_estimators": 634,
+          "reg_lambda": 0.0017367294199155771
+        },
+        "log_loss": 0.03258
+      },
+      {
+        "params": {
+          "num_leaves": 15,
+          "min_child_samples": 93,
+          "learning_rate": 0.028839397326945706,
+          "n_estimators": 124,
+          "reg_lambda": 0.0015040421613731086
+        },
+        "log_loss": 0.03771
+      },
+      {
+        "params": {
+          "num_leaves": 21,
+          "min_child_samples": 99,
+          "learning_rate": 0.08242162532313954,
+          "n_estimators": 334,
+          "reg_lambda": 0.925114664231969
+        },
+        "log_loss": 0.03242
+      },
+      {
+        "params": {
+          "num_leaves": 21,
+          "min_child_samples": 86,
+          "learning_rate": 0.045748060989786524,
+          "n_estimators": 552,
+          "reg_lambda": 0.07535772914072654
+        },
+        "log_loss": 0.03212
+      },
+      {
+        "params": {
+          "num_leaves": 26,
+          "min_child_samples": 60,
+          "learning_rate": 0.05375456560077009,
+          "n_estimators": 795,
+          "reg_lambda": 2.5149083947117674
+        },
+        "log_loss": 0.03236
+      },
+      {
+        "params": {
+          "num_leaves": 18,
+          "min_child_samples": 59,
+          "learning_rate": 0.1099530347876039,
+          "n_estimators": 134,
+          "reg_lambda": 0.1708252214901085
+        },
+        "log_loss": 0.03214
+      },
+      {
+        "params": {
+          "num_leaves": 5,
+          "min_child_samples": 72,
+          "learning_rate": 0.13909013848819712,
+          "n_estimators": 273,
+          "reg_lambda": 1.2079072787368805
+        },
+        "log_loss": 0.03375
+      },
+      {
+        "params": {
+          "num_leaves": 12,
+          "min_child_samples": 76,
+          "learning_rate": 0.010266721658638855,
+          "n_estimators": 658,
+          "reg_lambda": 1.4102926598877987
+        },
+        "log_loss": 0.03522
+      },
+      {
+        "params": {
+          "num_leaves": 30,
+          "min_child_samples": 47,
+          "learning_rate": 0.08498167088115272,
+          "n_estimators": 498,
+          "reg_lambda": 0.0034145244015839444
+        },
+        "log_loss": 0.03134
+      }
+    ]
+  }
+}
